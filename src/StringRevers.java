@@ -2,16 +2,16 @@ public class StringRevers {
 
     public static void main(String[] args) {
 
-        String str = "Aloo";
+        String str = "Alla";
         System.out.println(reverse(str));
 
-//        String str1 = "123";
-//        System.out.println(reverse(str));
+        String str1 = "123";
+        System.out.println(reverse(str1));
 
 
     }
     public static String reverse(String str) {
-        if (str == null) throw new IllegalArgumentException("String can not be empty");
+        if (str.isEmpty()) throw new IllegalArgumentException("String can not be empty");
 
         String revers = "";
         for (int i = str.length() - 1; i >= 0; i--) {
