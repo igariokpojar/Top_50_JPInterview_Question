@@ -20,3 +20,7 @@ public class DistinctCharacters {
         System.out.println(count);
     }
 }
+/*
+You can create the character array from the string.
+Then iterate over it and create a HashMap with the character as key and their count as value.
+ */
