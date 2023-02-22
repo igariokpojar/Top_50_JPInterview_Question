@@ -3,7 +3,7 @@ import java.util.*;
 public class RomanToInt {
     public static void main(String[] args) {
 
-        System.out.println(romanToInt("III"));
+        System.out.println(romanToInt("CCXLVIII"));
 
     }
     public static int romanToInt(String s) {
@@ -19,7 +19,7 @@ public class RomanToInt {
         int num = map.get(s.charAt(s.length() - 1));
         // Loop for each character from right to left
         for (int i = s.length() - 2; i >= 0; i--) {
-
+       // if the value 1000>=500 then nums+
             if (map.get(s.charAt(i)) >= map.get(s.charAt(i + 1))) {
                 num += map.get(s.charAt(i));
             } else {
