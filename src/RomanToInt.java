@@ -1,9 +1,12 @@
 import java.util.*;
 
 public class RomanToInt {
+    public static void main(String[] args) {
 
-    public int romanToInt(String s) {
+        System.out.println(romanToInt("III"));
 
+    }
+    public static int romanToInt(String s) {
         Map<Character, Integer> map = new HashMap<>();
         map.put('I', 1);
         map.put('V', 5);
@@ -26,3 +29,6 @@ public class RomanToInt {
         return num;
     }
 }
+
+
+
